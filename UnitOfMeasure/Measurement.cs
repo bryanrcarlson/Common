@@ -27,8 +27,7 @@ namespace Nsar.Common.UnitOfMeasure
     {
         //TODO: Implement
         //QualityCode QualityCode { get; }
-        //Test change
-        //Testing again
+        //Testing a change // Change
     }
 
     public class Measurement : IMeasurement
