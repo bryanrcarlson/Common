@@ -13,12 +13,12 @@ namespace Nsar.Common.UnitOfMeasure
         IPhenomenon Phenomenon { get; }
     }
 
-    public interface ITemperalMeasurement : IMeasurement
+    public interface ITemporalMeasurement : IMeasurement
     {
         DateTime DateTime { get; }
     }
 
-    public interface ISpatialTemperalMeasurement : ITemperalMeasurement
+    public interface ISpatialTemperalMeasurement : ITemporalMeasurement
     {
         GeoCoordinate GeoCoordinate { get; }
     }
@@ -48,11 +48,11 @@ namespace Nsar.Common.UnitOfMeasure
         public IPhenomenon Phenomenon { get { return this.phenomenon; } }
     }
 
-    public class TemperalMeasurement : Measurement, ITemperalMeasurement
+    public class TemporalMeasurement : Measurement, ITemporalMeasurement
     {
         private readonly DateTime dateTime;
 
-        public TemperalMeasurement(
+        public TemporalMeasurement(
             double value,
             string unit,
             IPhenomenon phenomenon,
@@ -67,7 +67,7 @@ namespace Nsar.Common.UnitOfMeasure
 
     // TODO: SpatialTemperalMeasurement
 
-    public class MeasurementComplete : TemperalMeasurement, ISpatialTemperalMeasurement, IQuality
+    public class MeasurementComplete : TemporalMeasurement, ISpatialTemperalMeasurement, IQuality
     {
         private readonly GeoCoordinate geoCoordinate;
 
