@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>Nsar.Common.Measure</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <Authors>Bryan Carlson</Authors>
     <Description>In due time princess...</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -11,10 +11,15 @@
     <Copyright>Probably you, the people, of the USA</Copyright>
     <RootNamespace>Nsar.Common.Measure</RootNamespace>
     <AssemblyName>NsarCommonMeasure</AssemblyName>
+    <Version>1.1.0</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company>USDA ARS NSAR</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>NsarCommonMeasure.xml</DocumentationFile>
+    <DefineConstants>TRACE;RELEASE;NETSTANDARD1_3</DefineConstants>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
   </PropertyGroup>
 
 </Project>
