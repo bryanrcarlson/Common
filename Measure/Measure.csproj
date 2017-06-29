@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>Nsar.Common.Measure</PackageId>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>0.3.0</PackageVersion>
     <Authors>Bryan Carlson</Authors>
     <Description>In due time princess...</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -11,7 +11,7 @@
     <Copyright>Probably you, the people, of the USA</Copyright>
     <RootNamespace>Nsar.Common.Measure</RootNamespace>
     <AssemblyName>NsarCommonMeasure</AssemblyName>
-    <Version>1.1.0</Version>
+    <Version>0.3.0</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Company>USDA ARS NSAR</Company>
   </PropertyGroup>

@@ -6,6 +6,9 @@ namespace Nsar.Common.Measure.Models
 {
     public class Measurement
     {
+        // TODO: Update to use Geocoordinate once that's in .NET standard
+        // TODO: Error checking, etc
+
         private readonly string name;
         private readonly DateTime dateTime;
         private readonly double latitude;

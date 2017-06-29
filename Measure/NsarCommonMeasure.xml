@@ -4,5 +4,12 @@
         <name>NsarCommonMeasure</name>
     </assembly>
     <members>
+        <member name="T:Nsar.Common.Measure.PhysicalQuantityConverter">
+            <summary>
+            INCOMPLETE
+            Style guide: http://physics.nist.gov/cuu/Units/checklist.html
+            Conversion tool, meaning, etc: http://cdsarc.u-strasbg.fr/cgi-bin/Unit?W/m2
+            </summary>
+        </member>
     </members>
 </doc>
