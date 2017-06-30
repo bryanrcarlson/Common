@@ -6,18 +6,18 @@ namespace Nsar.Common.Measure.Models
 {
     public class PhysicalQuantity
     {
-        private readonly double value;
+        private readonly decimal value;
         private readonly string unit;
         private readonly int precision;
 
-        public double Value { get { return value; } }
+        public decimal Value { get { return value; } }
         public string Unit { get { return unit; } }
         public int Precision { get { return precision; } }
 
         public PhysicalQuantity(
-            double value,
+            decimal value,
             string unit,
-            int precision = 3)
+            int precision = int.MaxValue)
         {
             this.value = value;
             this.unit = unit;
@@ -32,19 +32,19 @@ namespace Nsar.Common.Measure.Models
                 return false;
             }
 
-            return equals((PhysicalQuantity)obj);
+            return Equals((PhysicalQuantity)obj);
         }
 
-        public bool equals(PhysicalQuantity other)
+        public bool Equals(PhysicalQuantity other)
         {
             if (!int.Equals(Precision, other.Precision))
             {
                 return false;
             }
 
-            double diff = Math.Abs(
+            decimal diff = Math.Abs(
                 this.Value - other.Value);
-            if(diff > (double) precision)
+            if(diff > (decimal) precision)
             {
                 return false;
             }

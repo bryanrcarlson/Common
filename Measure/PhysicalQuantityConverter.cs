@@ -18,7 +18,7 @@ namespace Nsar.Common.Measure
 
         public PhysicalQuantityConverter()
         {
-            this.units = generateUnits();
+            //this.units = generateUnits();
         }
 
         public PhysicalQuantity Convert(PhysicalQuantity physicalQuantity)
@@ -56,11 +56,9 @@ namespace Nsar.Common.Measure
                     throw new Exception("Error parsing units");
             }
 
-            // search symbols for standard (and derived?) symbols
-            // if found standard/derived symbol then check for standard prefix
-            // if standard prefix, convert using multiplier
             return pq;
         }
+        /*
         private List<Unit> generateUnits()
         {
             // TODO: HACK, incomplete, probably should rewrite or at least read from a json file
@@ -171,5 +169,6 @@ namespace Nsar.Common.Measure
 
             return prefixes;
         }
+        */
     }
 }
