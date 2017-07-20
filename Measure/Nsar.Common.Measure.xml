@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>NsarCommonMeasure</name>
+        <name>Nsar.Common.Measure</name>
     </assembly>
     <members>
         <member name="T:Nsar.Common.Measure.PhysicalQuantityConverter">

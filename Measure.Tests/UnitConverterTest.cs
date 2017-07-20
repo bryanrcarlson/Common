@@ -14,9 +14,9 @@ namespace Nsar.Common.Measure.Tests
             PhysicalQuantity expSpeed       = new PhysicalQuantity(10, "m/s");
             PhysicalQuantity expDegree      = new PhysicalQuantity(10, "deg");
             PhysicalQuantity expPercent     = new PhysicalQuantity(10, "%");
-            PhysicalQuantity expPrecip      = new PhysicalQuantity(0.01, "m");
+            PhysicalQuantity expPrecip      = new PhysicalQuantity((decimal)0.01, "m");
             PhysicalQuantity expPressure    = new PhysicalQuantity(10000, "Pa");
-            PhysicalQuantity expPar         = new PhysicalQuantity(0.00001, "mol/(m^2 s)", 6);
+            PhysicalQuantity expPar         = new PhysicalQuantity((decimal)0.00001, "mol/(m^2 s)", 6);
             PhysicalQuantity expVolt        = new PhysicalQuantity(10, "V");
             PhysicalQuantity expPressLower  = new PhysicalQuantity(10000, "Pa");
             PhysicalQuantity expRad         = new PhysicalQuantity(10, "kg/s^3");

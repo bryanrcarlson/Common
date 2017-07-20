@@ -1,23 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFrameworks>net46;netstandard1.3</TargetFrameworks>
     <PackageId>Nsar.Common.Measure</PackageId>
-    <PackageVersion>0.3.3</PackageVersion>
+    <PackageVersion>0.3.7</PackageVersion>
     <Authors>Bryan Carlson</Authors>
-    <Description>In due time princess...</Description>
+    <Description>Library for unit of measure and other related fun</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>First release, how do you drive this thing?</PackageReleaseNotes>
     <Copyright>Probably you, the people, of the USA</Copyright>
     <RootNamespace>Nsar.Common.Measure</RootNamespace>
-    <AssemblyName>NsarCommonMeasure</AssemblyName>
-    <Version>0.3.3</Version>
+    <AssemblyName>Nsar.Common.Measure</AssemblyName>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Company>USDA ARS NSAR</Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>NsarCommonMeasure.xml</DocumentationFile>
+    <DocumentationFile>Nsar.Common.Measure.xml</DocumentationFile>
     <DefineConstants>TRACE;RELEASE;NETSTANDARD1_3</DefineConstants>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
   </PropertyGroup>
